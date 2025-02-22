@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/LblCalculadora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/LblCalculadora"
+        app:layout_constraintVertical_bias="0.15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <EditText
+        android:id="@+id/TxtQty1"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:autofillHints=""
+        android:hint="@string/TxtQty1"
+        android:textAlignment="center"
+        android:ems="2"
+        android:textSize="30sp"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/LblOperation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblCalculadora" />
+
+    <TextView
+        android:id="@+id/LblOperation"
+        android:layout_width="50sp"
+        android:layout_height="50sp"
+        android:textSize="30sp"
+        android:text="@string/LblOp"
+        android:textAlignment="center"
+        app:layout_constraintVertical_bias="0.06"
+        app:layout_constraintEnd_toStartOf="@id/TxtQty2"
+        app:layout_constraintStart_toEndOf="@id/TxtQty1"
+        app:layout_constraintTop_toBottomOf="@id/LblCalculadora"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <EditText
+        android:id="@+id/TxtQty2"
+        android:layout_width="100sp"
+        android:layout_height="60sp"
+        android:autofillHints=""
+        android:hint="@string/TxtQty2"
+        android:textAlignment="center"
+        android:ems="2"
+        android:textSize="30sp"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintVertical_bias="0.05"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/LblOperation"
+        app:layout_constraintTop_toBottomOf="@+id/LblCalculadora" />
+
+    <TextView
+        android:id="@+id/LblResultado"
+        android:layout_width="200sp"
+        android:layout_height="50sp"
+        android:text="@string/LblResult"
+        android:gravity="center"
+        android:textSize="30sp"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintEnd_toStartOf="@id/TxtQty2"
+        app:layout_constraintStart_toEndOf="@id/TxtQty1"
+        app:layout_constraintTop_toBottomOf="@id/LblCalculadora"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    <Button
+        android:id="@+id/BtnCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BtnCalcular"
+        app:layout_constraintVertical_bias="0.95"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblOperation" />
+
+    <Button
+        android:id="@+id/BtnSumar"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:text="@string/BtnSumar"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/BtnRestar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblOperation" />
+    <Button
+        android:id="@+id/BtnRestar"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:text="@string/BtnRestar"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/BtnSumar"
+        app:layout_constraintTop_toBottomOf="@+id/LblOperation" />
+
+    <Button
+        android:id="@+id/BtnMultiplicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:text="@string/BtnMultiplicacion"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintVertical_bias="0.6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/BtnDivision"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LblOperation" />
+    <Button
+        android:id="@+id/BtnDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="100sp"
+        android:text="@string/BtnDivision"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintVertical_bias="0.6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/BtnMultiplicacion"
+        app:layout_constraintTop_toBottomOf="@+id/LblOperation" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

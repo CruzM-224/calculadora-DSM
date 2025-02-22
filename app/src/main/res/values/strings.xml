@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Calculadora</string>
+    <string name="LblCalculadora">Ingrese los valores y escoja la operacion:</string>
+    <string name="LblOp"> </string>
+    <string name="LblResult">Resultado</string>
+    <string name="BtnCalcular">Calcular</string>
+    <string name="BtnSumar">+</string>
+    <string name="BtnRestar">-</string>
+    <string name="BtnMultiplicacion">X</string>
+    <string name="BtnDivision">/</string>
+    <string name="TxtQty1">x1</string>
+    <string name="TxtQty2">x2</string>
+</resources>
